@@ -1,0 +1,60 @@
+.cuadrado-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(219, 233, 19, 0.904);  
+ }
+ h1 {
+    font-size: 5rem; /* You can adjust this value to your preference */
+    text-transform: uppercase; /* This will convert all letters to uppercase */
+    text-decoration: underline;
+    text-decoration-color: #0eb846c0; /* This will set the underline color to a neon pink */
+    text-decoration-style: wavy; /* This will make the underline wavy, like a neon sign */
+    letter-spacing: 1rem; /* This will add some space between each letter */
+    animation: neon 2s ease-in-out infinite; /* This will apply a pulsing animation to the underline */
+  }
+  
+  @keyframes neon {
+    2% { text-decoration-color: #f3ca11b0; }
+    60% { text-decoration-color: #0e6dc794; }
+    100% { text-decoration-color: #e70334c2; }
+  } 
+  .subtitle {
+    font-size: 2rem; /* You can adjust this value to your preference */
+    cursor: pointer; /* This will change the cursor to a pointer when hovering over the subtitle */
+  }
+  
+  .subtitle {
+    animation: leaves 0s ease-in-out; /* This will trigger the animation when the subtitle is clicked */
+  }
+  
+  @keyframes leaves {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .subtitle {
+    position: -ms-page;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('leaves.png'); /* You'll need to create a leaves.png image and update the URL accordingly */
+    background-size: 50px 50px; /* You can adjust this value to your preference */
+    animation: leaves-fall 2s ease-in-out infinite; /* This will make the leaves fall from the top */
+  }
+  
+  @keyframes leaves-fall {
+    1% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
